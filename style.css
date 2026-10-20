@@ -1,597 +1,419 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Segoe UI',sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
 }
 
-
-body{
-
-    background:#f8faff;
-    min-height:100vh;
-
+body {
+    background: #f8faff;
+    min-height: 100vh;
 }
-
-
 
 /* SIDEBAR */
-
-.sidebar{
-
-    position:fixed;
-    left:0;
-    top:0;
-
-    width:205px;
-    height:100vh;
-
-    background:linear-gradient(180deg,#2448e7,#1c37c8);
-
-    color:white;
-
-    padding:40px 18px;
-
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 205px;
+    height: 100vh;
+    background: linear-gradient(180deg, #2448e7, #1c37c8);
+    color: white;
+    padding: 40px 18px;
 }
 
-
-
-.logo{
-
-    display:flex;
-    align-items:center;
-
-    gap:10px;
-
-    font-size:18px;
-
-    font-weight:600;
-
-    margin-bottom:40px;
-
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 40px;
 }
 
-
-
-.logo i{
-
-    font-size:28px;
-
+.logo i {
+    font-size: 28px;
 }
 
-
-
-
-.menu{
-
-    list-style:none;
-
+.menu {
+    list-style: none;
 }
 
-
-
-.menu li{
-
-    margin-bottom:18px;
-
+.menu li {
+    margin-bottom: 18px;
 }
 
-
-
-.menu li a{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:12px;
-
-
-    text-decoration:none;
-
-    color:white;
-
-
-    padding:16px 14px;
-
-
-    border-radius:14px;
-
-
-    transition:0.3s;
-
+.menu li a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: white;
+    padding: 16px 14px;
+    border-radius: 14px;
+    transition: 0.3s;
 }
 
-
-
-.menu li a:hover{
-
-    background:rgba(255,255,255,0.15);
-
+.menu li a:hover {
+    background: rgba(255, 255, 255, 0.15);
 }
 
-
-
-.menu li.active a{
-
-    background:rgba(255,255,255,0.18);
-
+.menu li.active a {
+    background: rgba(255, 255, 255, 0.18);
 }
-
-
 
 /* HOME */
-
-.home-container{
-
-
-    height:100vh;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-
+.home-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
 }
 
-
-
-.hero{
-
-
-    text-align:center;
-
-
+.hero {
+    text-align: center;
+    max-width: 100%;
 }
 
-
-
-.home-icon{
-
-    font-size:70px;
-
-    color:#2448e7;
-
-    margin-bottom:20px;
-
-
+.home-icon {
+    font-size: 70px;
+    color: #2448e7;
+    margin-bottom: 20px;
 }
 
-
-
-.hero h2{
-
-    color:#1f2d63;
-
-    font-size:26px;
-
-    margin-bottom:20px;
-
+.hero h2 {
+    color: #1f2d63;
+    font-size: 26px;
+    margin-bottom: 20px;
 }
 
-
-
-.hero h1{
-
-
-    color:#2448e7;
-
-    font-size:72px;
-
-    font-weight:800;
-
-
+.hero h1 {
+    color: #2448e7;
+    font-size: 72px;
+    font-weight: 800;
 }
 
-
-
-.line{
-
-
-    width:60px;
-
-    height:5px;
-
-    background:#2448e7;
-
-
-    margin:20px auto;
-
-
-    border-radius:10px;
-
+.line {
+    width: 60px;
+    height: 5px;
+    background: #2448e7;
+    margin: 20px auto;
+    border-radius: 10px;
 }
 
-
-
-.hero p{
-
-    color:#24304d;
-
-    font-size:18px;
-
-    line-height:1.8;
-
-    margin-bottom:35px;
-
+.hero p {
+    color: #24304d;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 35px;
 }
 
-
-
-
-.start-btn{
-
-
-    display:inline-flex;
-
-
-    align-items:center;
-
-
-    gap:15px;
-
-
-    text-decoration:none;
-
-
-    color:white;
-
-
-    background:#2448e7;
-
-
-    padding:15px 30px;
-
-
-    border-radius:10px;
-
-
-    font-size:18px;
-
-
-    transition:0.3s;
-
-
+.start-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: white;
+    background: #2448e7;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: 0.3s;
 }
 
-
-
-.start-btn:hover{
-
-
-    transform:translateY(-3px);
-
+.start-btn:hover {
+    transform: translateY(-3px);
 }
-
-
-
 
 /* CONTENT */
-
-
-.content{
-
-
-    margin-left:240px;
-
-    padding:40px;
-
-
+.content {
+    margin-left: 240px;
+    padding: 40px;
+    min-width: 0;
 }
 
-
-
-
-
-.card{
-
-
-    background:white;
-
-
-    padding:30px;
-
-
-    border-radius:15px;
-
-
-    box-shadow:0 5px 20px rgba(0,0,0,0.08);
-
-
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    min-width: 0;
 }
-
-
 
 /* FORM */
-
-
-.form-group{
-
-
-    margin-bottom:20px;
-
-
+.form-group {
+    margin-bottom: 20px;
 }
 
-
-
-.form-group label{
-
-
-    display:block;
-
-    margin-bottom:8px;
-
-
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
 }
-
-
 
 .form-group input,
-
 .form-group textarea,
-
-.form-group select{
-
-
-    width:100%;
-
-
-    padding:12px;
-
-
-    border:1px solid #ccc;
-
-
-    border-radius:8px;
-
-
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
 }
 
-
-
-.form-group textarea{
-
-
-    height:120px;
-
-
-    resize:none;
-
-
+.form-group textarea {
+    height: 120px;
+    resize: vertical;
 }
-
-
-
 
 /* BUTTON */
-
-
-.btn{
-
-
-    background:#2448e7;
-
-
-    color:white;
-
-
-    border:none;
-
-
-    padding:12px 20px;
-
-
-    border-radius:8px;
-
-
-    cursor:pointer;
-
-
-    text-decoration:none;
-
-
-    display:inline-block;
-
-
+.btn {
+    background: #2448e7;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
 }
 
-
-
-.btn.edit{
-
-
-    background:#16a34a;
-
+.btn.edit {
+    background: #16a34a;
 }
 
-
-
-.btn:hover{
-
-    opacity:0.85;
-
+.btn:hover {
+    opacity: 0.85;
 }
-
-
 
 /* TABLE */
-
-
-table{
-
-
-    width:100%;
-
-
-    border-collapse:collapse;
-
-
+table {
+    width: 100%;
+    border-collapse: collapse;
 }
-
-
 
 table th,
-
-table td{
-
-
-    border:1px solid #ddd;
-
-
-    padding:12px;
-
-
-    text-align:center;
-
-
+table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
 }
 
-
-
-table th{
-
-
-    background:#2448e7;
-
-
-    color:white;
-
-
+table th {
+    background: #2448e7;
+    color: white;
 }
-
-
-
 
 /* STATUS */
-
-
-.status{
-
-
-    padding:6px 12px;
-
-
-    border-radius:20px;
-
-
-    background:#facc15;
-
-
+.status {
+    padding: 6px 12px;
+    border-radius: 20px;
+    background: #facc15;
 }
 
-
-
-.status.done{
-
-
-    background:#22c55e;
-
-
-    color:white;
-
-
+.status.done {
+    background: #22c55e;
+    color: white;
 }
-
-
 
 /* SUCCESS */
-
-
-.success-box{
-
-
-    background:white;
-
-
-    padding:40px;
-
-
-    border-radius:20px;
-
-
-    text-align:center;
-
-
-    box-shadow:0 5px 20px rgba(0,0,0,0.1);
-
-
+.success-box {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
-
-
-.success-icon{
-
-
-    font-size:80px;
-
-
-    color:#22c55e;
-
-
-    margin-bottom:20px;
-
-
+.success-icon {
+    font-size: 80px;
+    color: #22c55e;
+    margin-bottom: 20px;
 }
 
-
-
-.button-group{
-
-
-    display:flex;
-
-
-    justify-content:center;
-
-
-    gap:15px;
-
-
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
-
-
-.btn-outline{
-
-
-    border:2px solid #2448e7;
-
-
-    color:#2448e7;
-
-
-    padding:12px 20px;
-
-
-    border-radius:10px;
-
-
-    text-decoration:none;
-
-
+.btn-outline {
+    border: 2px solid #2448e7;
+    color: #2448e7;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
 }
 
+.btn-primary {
+    background: #2448e7;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
 
+/* MOBILE RESPONSIVE */
+@media screen and (max-width: 768px) {
 
-.btn-primary{
+    /* Sidebar menjadi menu bagian atas */
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
 
+    .logo {
+        margin-bottom: 15px;
+        font-size: 17px;
+    }
 
-    background:#2448e7;
+    .logo i {
+        font-size: 24px;
+    }
 
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
 
-    color:white;
+    .menu li {
+        margin-bottom: 0;
+        flex: 1 1 auto;
+    }
 
+    .menu li a {
+        justify-content: center;
+        gap: 6px;
+        padding: 10px 8px;
+        border-radius: 10px;
+        font-size: 13px;
+    }
 
-    padding:12px 20px;
+    /* Konten menyesuaikan lebar HP */
+    .content {
+        margin-left: 0;
+        padding: 15px;
+        width: 100%;
+    }
 
+    .card {
+        padding: 18px;
+        border-radius: 12px;
+    }
 
-    border-radius:10px;
+    /* Tampilan halaman utama */
+    .home-container {
+        min-height: 75vh;
+        height: auto;
+        padding: 30px 18px;
+    }
 
+    .home-icon {
+        font-size: 52px;
+        margin-bottom: 15px;
+    }
 
-    text-decoration:none;
+    .hero h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
 
+    .hero h1 {
+        font-size: clamp(36px, 10vw, 52px);
+        overflow-wrap: anywhere;
+    }
 
+    .hero p {
+        font-size: 15px;
+        line-height: 1.7;
+        margin-bottom: 25px;
+    }
+
+    .start-btn {
+        padding: 13px 20px;
+        gap: 10px;
+        font-size: 16px;
+    }
+
+    /* Form lebih nyaman disentuh */
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    /* Tabel bisa digeser ke samping */
+    table {
+        min-width: 550px;
+    }
+
+    .card:has(table) {
+        overflow-x: auto;
+    }
+
+    table th,
+    table td {
+        padding: 10px;
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    /* Kotak berhasil */
+    .success-box {
+        padding: 25px 16px;
+    }
+
+    .success-icon {
+        font-size: 60px;
+    }
+
+    .button-group {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .button-group a,
+    .button-group .btn {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+/* HP dengan layar sangat kecil */
+@media screen and (max-width: 380px) {
+
+    .sidebar {
+        padding: 12px;
+    }
+
+    .menu li a {
+        font-size: 12px;
+        padding: 9px 6px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .card {
+        padding: 14px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .button-group a,
+    .button-group .btn {
+        width: 100%;
+    }
 }
