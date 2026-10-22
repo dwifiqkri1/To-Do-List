@@ -11,3 +11,4 @@ Aplikasi To-Do List untuk membantu pengguna mencatat dan mengelola tugas sehari-
 ## Sprint 1
 - US-01: Menampilkan halaman utama To-Do List.
 
+Sprint 1: Dokumentasi proyek To-Do List (US-01).
